@@ -13,7 +13,7 @@ startStopBtn.onclick = function () {
         clearInterval(interval);
         startStopBtn.children[0].src = "./icons/start.png";
     } else if (!isContinue) {
-        startStopBtn.children[0].src = "./icons/stop.png";
+        startStopBtn.children[0].src = "./icons/pause.png";
         isContinue = true;
         interval = setInterval(isStopwatch ? stopwatch : timer, 1000);
     }
